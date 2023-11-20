@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Case study</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header starts -->
+    <div class="container-fluid p-0">
+        <!-- Header starts -->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="img/logo.svg" alt="Logo" style="max-width:50px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1" >Contact</a>
+                    </li>
+                    </ul>
+                    
+                    
+                    
+                </div>
+                <div class="nav-right-part d-flex align-items-center">
+                    <form class="d-flex">
+                        <div class="search-box position-relative me-2">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn p-0 position-absolute top-0 bottom-0" type="submit">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                    </form>
+                    <i class="fa-solid fa-bell mx-2"></i>
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle rounded-circle bg-dark text-white d-flex justify-content-center align-items-center" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            PG
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+        </header>
+        <!-- Header end -->
+        <!-- Banner Start -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active p-1" aria-current="true" aria-label="Slide 1">Order 1</button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="p-1" aria-label="Slide 2">Order 2</button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" class="p-1" aria-label="Slide 3"> Order 3</button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/banner-new-three.jpg" class="d-block w-100 h-100" alt="...">
+                <div class="carousel-caption d-none d-md-block rounded w-50 mx-auto mw-100 p-2">
+                  <h5 class="mb-0">Order Summary: Orders #1 Billed amount 2500</h5>
+                </div>
+                <!-- wizard start 1 -->
+                <div class="d-flex flex-sm-cln align-items-start container my-4 pb-4">
+                  <div class="nav flex-column flex-sm-rw nav-pills w-15 w-sm-100 mx-auto" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <button class="nav-link active" id="v-pills-home-tab"   type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Product</button>
+                    <button class="nav-link" id="v-pills-profile-tab"   type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Review</button>
+                    <button class="nav-link" id="v-pills-messages-tab"   type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Payment</button>
+                    <button class="nav-link" id="v-pills-settings-tab"   type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Summary</button>
+                  </div>
+                  <div class="tab-content w-75 w-sm-100" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                      <div class="card d-flex row flex-row py-3">
+                        <div class="col-md-3 sol-sm-12">
+                          <img src="img/cooker.jpg" class="mw-100 rounded mb-2" alt="product">
+                        </div>
+                        <div class="col-md-9 sol-sm-12">
+                          <p>The Indus Valley Stainless Steel Milk Cooker/Boiler/Pot with Handle, Lid, Knob, Whistle | Small 13.5cm/5.3 inch, 1Ltr, 0.7kg | Induction Friendly | Nonstick, 100% Pure & Toxin-Free
+                          </p>
+                          <h6>In Stock</h6>
+                          <h5>Gift Options not available</h5>
+                          <h5>&#8377;240</h5>
+                          <div class="d-flex flex-wrap mb-2">
+                            <form>
+                              <select class="list-dt me-3" id="number" name="number">
+                                <option selected>Select no.</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                            </select>
+                            </form>
+                            <a class="me-2 u-n">Delete</a>
+                            <a class="me-2 u-n">Save to later </a>
+                            <a class="me-2 u-n">See more like this</a>
+                            <a class="u-n">Share</a>
+                          </div>
+
+                        </div>
+                        <div class="d-flex justify-content-end">
+                          <a class="next btn btn-success align-self-end">Next</a>
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                      <div class="card d-flex row flex-row py-3">
+                        <div class="col-md-12">
+                          <h5>Review</h5>
+                          <h6>Review the selected products and modify</h6>
+                          <div class="d-flex mb-3">
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                          </div>
+                        </div>
+                        <form class="mb-3">
+                          <textarea placeholder="Your Review" class="p-2 rounded w-100" rows="4"></textarea>
+                        </form>
+                        <h5>Your Info</h5>
+                        <form>
+                          <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Name</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter Name">
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleFormControlInput2" class="form-label">City</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Enter City">
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleFormControlInput3" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="Enter email">
+                          </div>
+                          <button type="submit" class="btn btn-primary mb-3">Submit</button>
+                        </form>
+                        <div class="d-flex justify-content-between">
+                          <a class="previous btn btn-secondary me-2">Previous</a>
+                          <a class="next btn btn-success">Next</a>
+                        </div>
+                      </div>
+                      </div>
+                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                      <div class="card d-flex row flex-row py-3">
+                        
+                        <div class="form-card">
+                          <h5 class="fs-title">Payment Information</h5>
+                          <div class="radio-group">
+                              <div class='radio' data-value="credit"><img src="https://i.imgur.com/XzOzVHZ.jpg" width="200px" alt="Product" height="100px"></div>
+                              <div class='radio' data-value="paypal"><img src="https://i.imgur.com/jXjwZlj.jpg" width="200px" alt="Product" height="100px"></div>
+                              <br>
+                          </div>
+                          <div class="row flex-nowrap mb-3">
+                            <div class="col-12 d-flex flex-column">
+                              <label class="pay">Card Holder Name*</label>
+                              <input class="form-control" type="text" name="holdername" placeholder=""/>
+                            </div>
+                          </div>
+                          
+                          <div class="row flex-nowrap mb-3">
+                              <div class="col-9 d-flex flex-column">
+                                  <label class="pay">Card Number*</label>
+                                  <input class="form-control" type="text" name="cardno" placeholder=""/>
+                              </div>
+                              <div class="col-3 d-flex flex-column">
+                                  <label class="pay">CVC*</label>
+                                  <input class="form-control" type="password" name="cvcpwd" placeholder="***"/>
+                              </div>
+                          </div>
+                          <div class="row flex-nowrap mb-3">
+                              <div class="col-2">
+                                  <label class="pay">Expiry Date*</label>
+                              </div>
+                              <div class="col-9">
+                                  <select class="list-dt" id="month" name="expmonth">
+                                      <option selected>Month</option>
+                                      <option>January</option>
+                                      <option>February</option>
+                                      <option>March</option>
+                                      <option>April</option>
+                                      <option>May</option>
+                                      <option>June</option>
+                                      <option>July</option>
+                                      <option>August</option>
+                                      <option>September</option>
+                                      <option>October</option>
+                                      <option>November</option>
+                                      <option>December</option>
+                                  </select>
+                                  <select class="list-dt" id="year" name="expyear">
+                                      <option selected>Year</option>
+                                  </select>
+                              </div>
+                          </div>
+                      </div>
+                        <div class="d-flex justify-content-between">
+                          <a class="previous btn btn-secondary me-2">Previous</a>
+                          <a class="next btn btn-success">Next</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                      <div class="card d-flex row flex-row py-3">
+                        <div class="col-md-12">
+                          <h5>Summary</h5>
+                          <div class="d-flex justify-content-between flex-sm-cln">
+                            <h6 class="mt-2">Juhu Tara Rd, opposite JW Marriott, Juhu Tara, Juhu, Mumbai, Maharashtra 400049, India
+                            </h6>
+                            <table class="table">
+                              <tbody>
+                                <tr>
+                                  <td colspan="2">
+                                    <h5>Order Summary</h5>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>Items Subtotal</td>
+                                  <td>&#8377;240</td>
+                                </tr>
+                                <tr>
+                                  <td>Shipping</td>
+                                  <td>&#8377;20</td>
+                                </tr>
+                                <tr>
+                                  <td>Total</td>
+                                  <td>&#8377;260</td>
+                                </tr>
+                                <tr>
+                                  <td><strong>Grand Total</strong></td>
+                                  <td>&#8377;260</td>
+                                </tr>
+                              </tbody>
+                            </table>
+
+                          </div>
+                          
+                          <div class="card d-flex row flex-row py-3 mx-2">
+                            <div class="col-md-3 sol-sm-12">
+                              <img src="img/cooker.jpg" class="mw-100 rounded mb-2" alt="product">
+                            </div>
+                            <div class="col-md-9 sol-sm-12">
+                              <p>The Indus Valley Stainless Steel Milk Cooker/Boiler/Pot with Handle, Lid, Knob, Whistle | Small 13.5cm/5.3 inch, 1Ltr, 0.7kg | Induction Friendly | Nonstick, 100% Pure & Toxin-Free
+                              </p>
+                              <h6>In Stock</h6>
+                              <h5>Gift Options not available</h5>
+                              <h5>&#8377;240</h5>
+                              <div class="d-flex flex-wrap">
+                                <form>
+                                  <select class="list-dt me-3" id="number" name="number">
+                                    <option selected>Select no.</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                </select>
+                                </form>
+                                <a class="me-2 u-n">Delete</a>
+                                <a class="me-2 u-n">Save to later </a>
+                                <a class="me-2 u-n">See more like this</a>
+                                <a class="u-n">Share</a>
+                              </div>
+    
+                            </div>
+                            
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between mt-3">
+                          <a class="previous btn btn-secondary me-2">Previous</a>
+                          <a class="nexts btn btn-success">Submit</a>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+                <!-- Wizard end 1 -->
+                
+                
+              </div>
+              <div class="carousel-item">
+                <img src="img/banner-new-two.jpg" class="d-block w-100 h-100" alt="...">
+                <div class="carousel-caption d-none d-md-block rounded w-50 mx-auto mw-100 p-2">
+                  <h5 class="mb-0">Order Summary: Orders #2 Billed amount 5500</h5>
+                </div>
+                <!-- wizard start 2 -->
+                <div class="d-flex flex-sm-cln align-items-start container my-4 pb-4">
+                  <div class="nav flex-column flex-sm-rw nav-pills w-15 w-sm-100 mx-auto" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <button class="nav-link active" id="v-pills-home-tab"  data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Product</button>
+                    <button class="nav-link" id="v-pills-profile-tab"  data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Review</button>
+                    <button class="nav-link" id="v-pills-messages-tab"  data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Payment</button>
+                    <button class="nav-link" id="v-pills-settings-tab"  data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Summary</button>
+                  </div>
+                  <div class="tab-content w-75 w-sm-100" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                      <div class="card d-flex row flex-row py-3">
+                        <div class="col-md-3 sol-sm-12">
+                          <img src="img/dish.jpg" class="mw-100 rounded mb-2" alt="product">
+                        </div>
+                        <div class="col-md-9 sol-sm-12">
+                          <p>Cello Opalware Dazzle Series Secret Garden Dinner Set, 18 Units | Opal Glass Dinner Set for 6 | Light-Weight, Daily Use Crockery Set for Dining | White Plate and Bowl Set
+
+                          </p>
+                          <h6>In Stock</h6>
+                          <h5>Gift Options not available</h5>
+                          <h5>&#8377;240</h5>
+                          <div class="d-flex flex-wrap mb-3">
+                            <form>
+                              <select class="list-dt me-3" id="number" name="number">
+                                <option selected>Select no.</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                            </select>
+                            </form>
+                            <a class="me-2 u-n">Delete</a>
+                            <a class="me-2 u-n">Save to later </a>
+                            <a class="me-2 u-n">See more like this</a>
+                            <a class="u-n">Share</a>
+                          </div>
+
+                        </div>
+                        <div class="d-flex justify-content-end">
+                          <a class="next btn btn-success align-self-end">Next</a>
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                      <div class="card d-flex row flex-row py-3">
+                        <div class="col-md-12">
+                          <h5>Review</h5>
+                          <h6>Review the selected products and modify</h6>
+                          <div class="d-flex mb-3">
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                          </div>
+                        </div>
+                        <form class="mb-3">
+                          <textarea placeholder="Your Review" class="p-2 rounded w-100" rows="4"></textarea>
+                        </form>
+                        <h5>Your Info</h5>
+                        <form>
+                          <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Name</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter Name">
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleFormControlInput2" class="form-label">City</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Enter City">
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleFormControlInput3" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="Enter email">
+                          </div>
+                          <button type="submit" class="btn btn-primary mb-3">Submit</button>
+                        </form>
+                        <div class="d-flex justify-content-between">
+                          <a class="previous btn btn-secondary me-2">Previous</a>
+                          <a class="next btn btn-success">Next</a>
+                        </div>
+                      </div>
+                      </div>
+                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                      <div class="card d-flex row flex-row py-3">
+                        
+                        <div class="form-card">
+                          <h5 class="fs-title">Payment Information</h5>
+                          <div class="radio-group">
+                              <div class='radio' data-value="credit"><img src="https://i.imgur.com/XzOzVHZ.jpg" width="200px" alt="Product" height="100px"></div>
+                              <div class='radio' data-value="paypal"><img src="https://i.imgur.com/jXjwZlj.jpg" width="200px" alt="Product" height="100px"></div>
+                              <br>
+                          </div>
+                          <div class="row flex-nowrap mb-3">
+                            <div class="col-12 d-flex flex-column">
+                              <label class="pay">Card Holder Name*</label>
+                              <input class="form-control" type="text" name="holdername" placeholder=""/>
+                            </div>
+                          </div>
+                          
+                          <div class="row flex-nowrap mb-3">
+                              <div class="col-9 d-flex flex-column">
+                                  <label class="pay">Card Number*</label>
+                                  <input class="form-control" type="text" name="cardno" placeholder=""/>
+                              </div>
+                              <div class="col-3 d-flex flex-column">
+                                  <label class="pay">CVC*</label>
+                                  <input class="form-control" type="password" name="cvcpwd" placeholder="***"/>
+                              </div>
+                          </div>
+                          <div class="row flex-nowrap mb-3">
+                              <div class="col-2">
+                                  <label class="pay">Expiry Date*</label>
+                              </div>
+                              <div class="col-9">
+                                  <select class="list-dt" id="month" name="expmonth">
+                                      <option selected>Month</option>
+                                      <option>January</option>
+                                      <option>February</option>
+                                      <option>March</option>
+                                      <option>April</option>
+                                      <option>May</option>
+                                      <option>June</option>
+                                      <option>July</option>
+                                      <option>August</option>
+                                      <option>September</option>
+                                      <option>October</option>
+                                      <option>November</option>
+                                      <option>December</option>
+                                  </select>
+                                  <select class="list-dt" id="year" name="expyear">
+                                      <option selected>Year</option>
+                                  </select>
+                              </div>
+                          </div>
+                      </div>
+                        <div class="d-flex justify-content-between">
+                          <a class="previous btn btn-secondary me-2">Previous</a>
+                          <a class="next btn btn-success">Next</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                      <div class="card d-flex row flex-row py-3 mx-2">
+                        <div class="col-md-12">
+                          <h5>Summary</h5>
+                          <div class="d-flex justify-content-between flex-sm-cln">
+                            <h6 class="mt-2">Juhu Tara Rd, opposite JW Marriott, Juhu Tara, Juhu, Mumbai, Maharashtra 400049, India
+                            </h6>
+                            <table class="table">
+                              <tbody>
+                                <tr>
+                                  <td colspan="2">
+                                    <h5>Order Summary</h5>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>Items Subtotal</td>
+                                  <td>&#8377;240</td>
+                                </tr>
+                                <tr>
+                                  <td>Shipping</td>
+                                  <td>&#8377;20</td>
+                                </tr>
+                                <tr>
+                                  <td>Total</td>
+                                  <td>&#8377;260</td>
+                                </tr>
+                                <tr>
+                                  <td><strong>Grand Total</strong></td>
+                                  <td>&#8377;260</td>
+                                </tr>
+                              </tbody>
+                            </table>
+
+                          </div>
+                          
+                          <div class="card d-flex row flex-row py-3">
+                            <div class="col-md-3 sol-sm-12">
+                              <img src="img/dish.jpg" class="mw-100 rounded mb-2" alt="product">
+                            </div>
+                            <div class="col-md-9 sol-sm-12">
+                              <p>Cello Opalware Dazzle Series Secret Garden Dinner Set, 18 Units | Opal Glass Dinner Set for 6 | Light-Weight, Daily Use Crockery Set for Dining | White Plate and Bowl Set
+
+                              </p>
+                              <h6>In Stock</h6>
+                              <h5>Gift Options not available</h5>
+                              <h5>&#8377;240</h5>
+                              <div class="d-flex flex-wrap">
+                                <form>
+                                  <select class="list-dt me-3" id="number" name="number">
+                                    <option selected>Select no.</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                </select>
+                                </form>
+                                <a class="me-2 u-n">Delete</a>
+                                <a class="me-2 u-n">Save to later </a>
+                                <a class="me-2 u-n">See more like this</a>
+                                <a class="u-n">Share</a>
+                              </div>
+    
+                            </div>
+                            
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between mt-3">
+                          <a class="previous btn btn-secondary me-2">Previous</a>
+                          <a class="nexts btn btn-success">Submit</a>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+                <!-- Wizard end 2 -->
+              </div>
+              <div class="carousel-item">
+                <img src="img/banner-new-one.png" class="d-block w-100 h-100" alt="...">
+                <div class="carousel-caption d-none d-md-block rounded w-50 mx-auto mw-100 p-2">
+                  <h5 class="mb-0">Order Summary: Orders #3 Billed amount 500</h5>
+                </div>
+                
+                <!-- wizard start 3 -->
+                <div class="d-flex flex-sm-cln align-items-start container my-4 pb-4">
+                  <div class="nav flex-column flex-sm-rw nav-pills w-15 w-sm-100 mx-auto" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <button class="nav-link active" id="v-pills-home-tab"  data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Product</button>
+                    <button class="nav-link" id="v-pills-profile-tab"  data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Review</button>
+                    <button class="nav-link" id="v-pills-messages-tab"  data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Payment</button>
+                    <button class="nav-link" id="v-pills-settings-tab"  data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Summary</button>
+                  </div>
+                  <div class="tab-content w-75 w-sm-100" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                      <div class="card d-flex row flex-row py-3">
+                        <div class="col-md-3 sol-sm-12">
+                          <img src="img/pan.jpg" class="mw-100 rounded mb-2" alt="product">
+                        </div>
+                        <div class="col-md-9 sol-sm-12">
+                          <p>Amazon Brand - Solimo Aluminium 4 Piece Non-Stick Cookware Set | Granite Finish | Induction Base | Pfoa Free | HTR Exterior Coating | 25Cm Tawa, 22 Cm Kadai, 22Cm Fry Pan, 1 Glass Lid | Grey
+
+                          </p>
+                          <h6>In Stock</h6>
+                          <h5>Gift Options not available</h5>
+                          <h5>&#8377;240</h5>
+                          <div class="d-flex flex-wrap">
+                            <form>
+                              <select class="list-dt me-3" id="number" name="number">
+                                <option selected>Select no.</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                            </select>
+                            </form>
+                            <a class="me-2 u-n">Delete</a>
+                            <a class="me-2 u-n">Save to later </a>
+                            <a class="me-2 u-n">See more like this</a>
+                            <a class="u-n">Share</a>
+                          </div>
+
+                        </div>
+                        <div class="d-flex justify-content-end mt-3">
+                          <a class="next btn btn-success align-self-end">Next</a>
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                      <div class="card d-flex row flex-row py-3">
+                        <div class="col-md-12">
+                          <h5>Review</h5>
+                          <h6>Review the selected products and modify</h6>
+                          <div class="d-flex mb-3">
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                          </div>
+                        </div>
+                        <form class="mb-3">
+                          <textarea placeholder="Your Review" class="p-2 rounded w-100" rows="4"></textarea>
+                        </form>
+                        <h5>Your Info</h5>
+                        <form>
+                          <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Name</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter Name">
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleFormControlInput2" class="form-label">City</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Enter City">
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleFormControlInput3" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="Enter email">
+                          </div>
+                          <button type="submit" class="btn btn-primary mb-3">Submit</button>
+                        </form>
+                        <div class="d-flex justify-content-between">
+                          <a class="previous btn btn-secondary me-2">Previous</a>
+                          <a class="next btn btn-success">Next</a>
+                        </div>
+                      </div>
+                      </div>
+                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                      <div class="card d-flex row flex-row py-3">
+                        
+                        <div class="form-card">
+                          <h5 class="fs-title">Payment Information</h5>
+                          <div class="radio-group">
+                              <div class='radio' data-value="credit"><img src="https://i.imgur.com/XzOzVHZ.jpg" width="200px" alt="Product" height="100px"></div>
+                              <div class='radio' data-value="paypal"><img src="https://i.imgur.com/jXjwZlj.jpg" width="200px" alt="Product" height="100px"></div>
+                              <br>
+                          </div>
+                          <div class="row flex-nowrap mb-3">
+                            <div class="col-12 d-flex flex-column">
+                              <label class="pay">Card Holder Name*</label>
+                              <input class="form-control" type="text" name="holdername" placeholder=""/>
+                            </div>
+                          </div>
+                          
+                          <div class="row flex-nowrap mb-3">
+                              <div class="col-9 d-flex flex-column">
+                                  <label class="pay">Card Number*</label>
+                                  <input class="form-control" type="text" name="cardno" placeholder=""/>
+                              </div>
+                              <div class="col-3 d-flex flex-column">
+                                  <label class="pay">CVC*</label>
+                                  <input class="form-control" type="password" name="cvcpwd" placeholder="***"/>
+                              </div>
+                          </div>
+                          <div class="row flex-nowrap mb-3">
+                              <div class="col-2">
+                                  <label class="pay">Expiry Date*</label>
+                              </div>
+                              <div class="col-9">
+                                  <select class="list-dt" id="month" name="expmonth">
+                                      <option selected>Month</option>
+                                      <option>January</option>
+                                      <option>February</option>
+                                      <option>March</option>
+                                      <option>April</option>
+                                      <option>May</option>
+                                      <option>June</option>
+                                      <option>July</option>
+                                      <option>August</option>
+                                      <option>September</option>
+                                      <option>October</option>
+                                      <option>November</option>
+                                      <option>December</option>
+                                  </select>
+                                  <select class="list-dt" id="year" name="expyear">
+                                      <option selected>Year</option>
+                                  </select>
+                              </div>
+                          </div>
+                      </div>
+                        <div class="d-flex justify-content-between">
+                          <a class="previous btn btn-secondary me-2">Previous</a>
+                          <a class="next btn btn-success">Next</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                      <div class="card d-flex row flex-row py-3">
+                        <div class="col-md-12">
+                          <h5>Summary</h5>
+                          <div class="d-flex justify-content-between flex-sm-cln">
+                            <h6 class="mt-2">Juhu Tara Rd, opposite JW Marriott, Juhu Tara, Juhu, Mumbai, Maharashtra 400049, India
+                            </h6>
+                            <table class="table">
+                              <tbody>
+                                <tr>
+                                  <td colspan="2">
+                                    <h5>Order Summary</h5>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>Items Subtotal</td>
+                                  <td>&#8377;240</td>
+                                </tr>
+                                <tr>
+                                  <td>Shipping</td>
+                                  <td>&#8377;20</td>
+                                </tr>
+                                <tr>
+                                  <td>Total</td>
+                                  <td>&#8377;260</td>
+                                </tr>
+                                <tr>
+                                  <td><strong>Grand Total</strong></td>
+                                  <td>&#8377;260</td>
+                                </tr>
+                              </tbody>
+                            </table>
+
+                          </div>
+                          
+                          <div class="card d-flex row flex-row py-3 mx-2">
+                            <div class="col-md-3 sol-sm-12">
+                              <img src="img/pan.jpg" class="mw-100 rounded mb-2" alt="product">
+                            </div>
+                            <div class="col-md-9 sol-sm-12">
+                              <p>Amazon Brand - Solimo Aluminium 4 Piece Non-Stick Cookware Set | Granite Finish | Induction Base | Pfoa Free | HTR Exterior Coating | 25Cm Tawa, 22 Cm Kadai, 22Cm Fry Pan, 1 Glass Lid | Grey
+
+                              </p>
+                              <h6>In Stock</h6>
+                              <h5>Gift Options not available</h5>
+                              <h5>&#8377;240</h5>
+                              <div class="d-flex flex-wrap">
+                                <form>
+                                  <select class="list-dt me-3" id="number" name="number">
+                                    <option selected>Select no.</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                </select>
+                                </form>
+                                <a class="me-2 u-n">Delete</a>
+                                <a class="me-2 u-n">Save to later </a>
+                                <a class="me-2 u-n">See more like this</a>
+                                <a class="u-n">Share</a>
+                              </div>
+    
+                            </div>
+                            
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between mt-3">
+                          <a class="previous btn btn-secondary me-2">Previous</a>
+                          <a class="nexts btn btn-success">Submit</a>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+                <!-- Wizard end 3 -->
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+          
+        <!-- Banner end -->
+
+    </div>
+    
+    <!-- Body end -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;400;500;700&family=Montserrat:wght@400;700&family=Roboto:wght@700&display=swap");
+body {
+  font-family: "Karla", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-menu {
+  right: 0;
+  min-width: auto;
+  right: 0 !important;
+  left: auto !important;
+  position: absolute !important;
+}
+.dropdown-menu li::marker {
+  display: none;
+}
+
+.carousel-caption h5 {
+  font-weight: 500;
+}
+
+.dropdown .dropdown-toggle {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.dropdown .dropdown-toggle::after {
+  display: none;
+}
+.dropdown .dropdown-toggle.bg-dark {
+  background-color: #00d69f !important;
+}
+@media screen and (max-width: 768px) {
+  .dropdown .dropdown-toggle {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+.search-box .btn {
+  right: 2rem;
+}
+.search-box .btn i {
+  font-size: 0.9rem;
+}
+
+.fa-bell {
+  font-size: 1.2rem;
+}
+
+.navbar-toggler {
+  padding: 0.25rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  font-weight: 700;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link {
+  color: rgb(0, 214, 159);
+}
+
+.carousel {
+  max-height: 31rem;
+}
+.carousel .carousel-indicators [data-bs-target] {
+  text-indent: inherit;
+  width: auto;
+  height: auto;
+  padding: 0.4rem !important;
+  background-color: #00d69f;
+  color: white;
+}
+.carousel .carousel-caption {
+  background-color: #93cece;
+  font-size: 2rem;
+  top: 3rem;
+  bottom: auto;
+}
+.carousel .carousel-inner {
+  overflow: visible;
+}
+.carousel button .nav-link {
+  background-color: #7b7f89;
+}
+.carousel button .nav-link.active {
+  background-color: #00d69f;
+}
+.carousel .nav-pills .nav-link.active, .carousel .nav-pills .show > .nav-link {
+  background-color: #00d69f;
+}
+
+.carousel-item {
+  height: 500px;
+}
+@media screen and (max-width: 767px) {
+  .carousel-item {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .carousel-item {
+    height: 250px;
+  }
+}
+
+.card p {
+  font-size: 1rem;
+}
+.card h6 {
+  font-size: 0.8rem;
+}
+.card h5 {
+  font-size: 1rem;
+}
+
+.w-15 {
+  width: 15%;
+}
+
+.nav-pills .nav-link {
+  background: #7b7f89;
+  margin-bottom: 1.5rem;
+  position: relative;
+  color: white;
+  font-weight: 500;
+}
+.nav-pills .nav-link:last-child::after {
+  display: none;
+}
+.nav-pills .nav-link::after {
+  width: 2px;
+  height: 30px;
+  position: absolute;
+  left: 50%;
+  top: 40px;
+  background-color: #7b7f89;
+  content: "";
+}
+
+.u-n {
+  text-decoration: none;
+  cursor: pointer;
+}
+.u-n:hover {
+  text-decoration: underline;
+}
+
+.star {
+  position: relative;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 0.9em;
+  margin-right: 0.9em;
+  margin-bottom: 1.2em;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0.7em solid #FC0;
+  border-left: 0.3em solid transparent;
+  /* Controlls the size of the stars. */
+  font-size: 10px;
+}
+.star:before, .star:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0.6em;
+  left: -1em;
+  border-right: 1em solid transparent;
+  border-bottom: 0.7em solid #FC0;
+  border-left: 1em solid transparent;
+  transform: rotate(-35deg);
+}
+.star:after {
+  transform: rotate(35deg);
+}
+
+label {
+  font-size: 0.9rem;
+}
+
+textarea {
+  border: 1px solid #ced4da;
+}
+
+.radio-group {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.radio {
+  display: inline-block;
+  width: 204;
+  height: 104;
+  border-radius: 0;
+  background: lightblue;
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 8px 2px;
+}
+
+.radio:hover {
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.radio.selected {
+  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+  .nav-right-part {
+    position: absolute;
+    right: 4rem;
+    top: 20px;
+  }
+  .search-box {
+    width: 9.063rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .w-sm-100 {
+    width: 100% !important;
+  }
+  .flex-sm-rw {
+    flex-direction: row !important;
+  }
+  .flex-sm-column, .flex-sm-cln {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .nav-pills .nav-link {
+    padding: 0.4rem;
+    font-size: 14px;
+    margin-bottom: 0;
+    margin-right: 12px;
+  }
+  .nav-pills .nav-link:last-child::after {
+    display: none;
+  }
+  .nav-pills .nav-link::after {
+    width: 20px;
+    height: 1px;
+    left: 100%;
+    top: 16px;
+    content: "";
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
